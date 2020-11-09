@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>标签 | 小帆博客</title>
+  <title>十一、Markdown高级技巧 | 小帆博客</title>
   <meta name="keywords" content="">
-  <meta name="description" content="标签 | 小帆博客">
+  <meta name="description" content="十一、Markdown高级技巧 | 小帆博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
@@ -407,19 +407,29 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Markdown高级技巧" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">标签</h1>
+        <h1 class="article-title">十一、Markdown高级技巧</h1>
     
     <div class="article-meta">
         
+        <span class="top"><a>置顶</a></span>
         
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Markdown教程">Markdown教程</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-11-07 22:01:29'>2020-11-07 21:55</time>
+            Created At : <time class="date" title='Updated At: 2020-11-09 15:13:18'>2020-11-10 14:30</time>
         
     </div>
     <div class="article-meta">
@@ -441,7 +451,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="toc-text">Markdown 高级技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84-HTML-%E5%85%83%E7%B4%A0"><span class="toc-text">支持的 HTML 元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89"><span class="toc-text">转义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F"><span class="toc-text">公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%AF%87%E7%AC%94%E8%AE%B0-%E5%86%99%E7%AC%94%E8%AE%B0"><span class="toc-text">1 篇笔记 写笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#typora-%E7%94%BB%E6%B5%81%E7%A8%8B%E5%9B%BE%E3%80%81%E6%97%B6%E5%BA%8F%E5%9B%BE-%E9%A1%BA%E5%BA%8F%E5%9B%BE-%E3%80%81%E7%94%98%E7%89%B9%E5%9B%BE"><span class="toc-text">typora 画流程图、时序图(顺序图)、甘特图</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -457,7 +467,64 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Markdown-高级技巧"><a href="#Markdown-高级技巧" class="headerlink" title="Markdown 高级技巧"></a>Markdown 高级技巧</h1><h3 id="支持的-HTML-元素"><a href="#支持的-HTML-元素" class="headerlink" title="支持的 HTML 元素"></a>支持的 HTML 元素</h3><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。</p>
+<p>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等 ，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用 &lt;kbd&gt;Ctrl&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Alt&lt;&#x2F;kbd&gt;+&lt;kbd&gt;Del&lt;&#x2F;kbd&gt; 重启电脑</span><br></pre></td></tr></table></figure>
+
+<p>输出结果为：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/81999271-F914-428D-B7BF-164BDC67CAAC.jpg" alt="img"></p>
+<h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">**文本加粗** </span><br><span class="line">\*\* 正常显示星号 \*\*</span><br></pre></td></tr></table></figure>
+
+<p>输出结果为：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/CA0E0162-0C48-41CD-B57A-CB32A4287C02.jpg" alt="img"></p>
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">&#96;   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   下划线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  小括号</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   感叹号</span><br></pre></td></tr></table></figure>
+
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>当你需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\mathbf&#123;V&#125;_1 \times \mathbf&#123;V&#125;_2 &#x3D;  \begin&#123;vmatrix&#125; </span><br><span class="line">\mathbf&#123;i&#125; &amp; \mathbf&#123;j&#125; &amp; \mathbf&#123;k&#125; \\</span><br><span class="line">\frac&#123;\partial X&#125;&#123;\partial u&#125; &amp;  \frac&#123;\partial Y&#125;&#123;\partial u&#125; &amp; 0 \\</span><br><span class="line">\frac&#123;\partial X&#125;&#123;\partial v&#125; &amp;  \frac&#123;\partial Y&#125;&#123;\partial v&#125; &amp; 0 \\</span><br><span class="line">\end&#123;vmatrix&#125;</span><br><span class="line">$&#123;$tep1&#125;&#123;\style&#123;visibility:hidden&#125;&#123;(x+1)(x+1)&#125;&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>输出结果为：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/1061D800-D44C-436D-A1EA-1CBDA95A5209.jpg" alt="img"></p>
+<p> <a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-table.html">Markdown 表格</a></p>
+<h2 id="1-篇笔记-写笔记"><a href="#1-篇笔记-写笔记" class="headerlink" title="1 篇笔记 写笔记"></a>1 篇笔记 写笔记</h2><ol>
+<li><p>  adc</p>
+<p> 928***528@qq.com</p>
+<p> <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/48b558e3035d9a7f38c09aeb.html"> 参考地址</a></p>
+<p>442</p>
+<h3 id="typora-画流程图、时序图-顺序图-、甘特图"><a href="#typora-画流程图、时序图-顺序图-、甘特图" class="headerlink" title="typora 画流程图、时序图(顺序图)、甘特图"></a>typora 画流程图、时序图(顺序图)、甘特图</h3><p>复制以下代码使用 typora 的源码模式粘贴到编辑器中查看效果：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/22A9BC11-BA3E-40D8-90B0-DC4FD29F9C02.jpg" alt="img"></p>
+<p>以下几个实例效果图如下：</p>
+<p><strong>1、横向流程图源码格式：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;mermaid</span><br><span class="line">graph LR</span><br><span class="line">A[方形] --&gt;B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt;|a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt;|a&#x3D;2| E[结果2]</span><br><span class="line">    F[横向流程图]</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2、竖向流程图源码格式：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;mermaid</span><br><span class="line">graph TD</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">    B --&gt; C&#123;条件a&#125;</span><br><span class="line">    C --&gt; |a&#x3D;1| D[结果1]</span><br><span class="line">    C --&gt; |a&#x3D;2| E[结果2]</span><br><span class="line">    F[竖向流程图]</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3、标准流程图源码格式：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;flow</span><br><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;io-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4、标准流程图源码格式（横向）：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;flow</span><br><span class="line">st&#x3D;&gt;start: 开始框</span><br><span class="line">op&#x3D;&gt;operation: 处理框</span><br><span class="line">cond&#x3D;&gt;condition: 判断框(是或否?)</span><br><span class="line">sub1&#x3D;&gt;subroutine: 子流程</span><br><span class="line">io&#x3D;&gt;inputoutput: 输入输出框</span><br><span class="line">e&#x3D;&gt;end: 结束框</span><br><span class="line">st(right)-&gt;op(right)-&gt;cond</span><br><span class="line">cond(yes)-&gt;io(bottom)-&gt;e</span><br><span class="line">cond(no)-&gt;sub1(right)-&gt;op</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>5、UML时序图源码样例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;sequence</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>6、UML时序图源码复杂样例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;sequence</span><br><span class="line">Title: 标题：复杂使用</span><br><span class="line">对象A-&gt;对象B: 对象B你好吗?（请求）</span><br><span class="line">Note right of 对象B: 对象B的描述</span><br><span class="line">Note left of 对象A: 对象A的描述(提示)</span><br><span class="line">对象B--&gt;对象A: 我很好(响应)</span><br><span class="line">对象B-&gt;小三: 你好吗</span><br><span class="line">小三--&gt;&gt;对象A: 对象B找我了</span><br><span class="line">对象A-&gt;对象B: 你真的好吗？</span><br><span class="line">Note over 小三,对象B: 我们是朋友</span><br><span class="line">participant C</span><br><span class="line">Note right of C: 没人陪我玩</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>7、UML标准时序图样例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;mermaid</span><br><span class="line">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头</span><br><span class="line">  sequenceDiagram</span><br><span class="line">    participant 张三</span><br><span class="line">    participant 李四</span><br><span class="line">    张三-&gt;王五: 王五你好吗？</span><br><span class="line">    loop 健康检查</span><br><span class="line">        王五-&gt;王五: 与疾病战斗</span><br><span class="line">    end</span><br><span class="line">    Note right of 王五: 合理 食物 &lt;br&#x2F;&gt;看医生...</span><br><span class="line">    李四--&gt;&gt;张三: 很好!</span><br><span class="line">    王五-&gt;李四: 你怎么样?</span><br><span class="line">    李四--&gt;王五: 很好!</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p><strong>8、甘特图样例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;mermaid</span><br><span class="line">%% 语法示例</span><br><span class="line">        gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title 软件开发甘特图</span><br><span class="line">        section 设计</span><br><span class="line">        需求                      :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        原型                      :active,  des2, 2014-01-09, 3d</span><br><span class="line">        UI设计                     :         des3, after des2, 5d</span><br><span class="line">    未来任务                     :         des4, after des3, 5d</span><br><span class="line">        section 开发</span><br><span class="line">        学习准备理解需求                      :crit, done, 2014-01-06,24h</span><br><span class="line">        设计框架                             :crit, done, after des2, 2d</span><br><span class="line">        开发                                 :crit, active, 3d</span><br><span class="line">        未来任务                              :crit, 5d</span><br><span class="line">        耍                                   :2d</span><br><span class="line">        section 测试</span><br><span class="line">        功能测试                              :active, a1, after des3, 3d</span><br><span class="line">        压力测试                               :after a1  , 20h</span><br><span class="line">        测试报告                               : 48h</span><br><span class="line">​&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p>效果图如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/md-flow.png" alt="img"></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/note/47651">adc</a>  adc 928***528@qq.com <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/48b558e3035d9a7f38c09aeb.html"> 参考地址</a>1年前 (2019-10-18)</p>
+</li>
+</ol>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3472693572@qq.com </span>
     </div>

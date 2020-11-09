@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>标签 | 小帆博客</title>
+  <title>win10右键失去新建与桌面图标箭头 | 小帆博客</title>
   <meta name="keywords" content="">
-  <meta name="description" content="标签 | 小帆博客">
+  <meta name="description" content="win10右键失去新建与桌面图标箭头 | 小帆博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
@@ -407,19 +407,29 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-电脑小知识" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">标签</h1>
+        <h1 class="article-title">win10右键失去新建与桌面图标箭头</h1>
     
     <div class="article-meta">
         
+        <span class="top"><a>置顶</a></span>
         
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Win10小麻烦">Win10小麻烦</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-11-07 22:01:29'>2020-11-07 21:55</time>
+            Created At : <time class="date" title='Updated At: 2020-11-09 14:40:23'>2020-11-09 19:30</time>
         
     </div>
     <div class="article-meta">
@@ -441,7 +451,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-win10%E8%A7%A3%E5%86%B3%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E5%A4%B1%E5%8E%BB%E6%96%B0%E5%BB%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">1 win10解决鼠标右键失去新建功能的方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E3%80%82%E5%8E%BB%E6%8E%89win10%E6%A1%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E7%9A%84%E5%B0%8F%E7%AE%AD%E5%A4%B4"><span class="toc-text">2。去掉win10桌面图标的小箭头</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -457,7 +467,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>title:  win10电脑常见小问题解决</p>
+<h1 id="1-win10解决鼠标右键失去新建功能的方法"><a href="#1-win10解决鼠标右键失去新建功能的方法" class="headerlink" title="1 win10解决鼠标右键失去新建功能的方法"></a>1 win10解决鼠标右键失去新建功能的方法</h1><p>单击选择“开始”→“运行”命令</p>
+<p>在“运行”对话框的“打开”栏中输入“reg add “HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\New” /ve /d “{D969A300-E7FF-11d0-A93B-00A0C90F2719}” /t REG_SZ /f”，然后单击“确定。</p>
+<p>点击开始&gt;附件&gt;记事本</p>
+<p>把以下内容复制到记事本中：Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\New]@=”{D969A300-E7FF-11d0-A93B-00A0C90F2719}”<br>文件名请复制“you.reg”点击保存到桌面。</p>
+<h1 id="2。去掉win10桌面图标的小箭头"><a href="#2。去掉win10桌面图标的小箭头" class="headerlink" title="2。去掉win10桌面图标的小箭头"></a>2。去掉win10桌面图标的小箭头</h1><p>  代码：改为.bat格式<br>reg add “HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons” /v 29 /d “%systemroot%\system32\imageres.dll,197” /t reg_sz /f<br>taskkill /f /im explorer.exe<br>attrib -s -r -h “%userprofile%\AppData\Local\iconcache.db”<br>del “%userprofile%\AppData\Local\iconcache.db” /f /q<br>start explorer<br>pause</p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3472693572@qq.com </span>
     </div>

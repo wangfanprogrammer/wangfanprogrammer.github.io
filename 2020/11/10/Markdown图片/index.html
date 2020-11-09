@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>标签 | 小帆博客</title>
+  <title>九、Markdown图片 | 小帆博客</title>
   <meta name="keywords" content="">
-  <meta name="description" content="标签 | 小帆博客">
+  <meta name="description" content="九、Markdown图片 | 小帆博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
@@ -407,19 +407,29 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Markdown图片" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">标签</h1>
+        <h1 class="article-title">九、Markdown图片</h1>
     
     <div class="article-meta">
         
+        <span class="top"><a>置顶</a></span>
         
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Markdown教程">Markdown教程</a>
+            
+        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2020-11-07 22:01:29'>2020-11-07 21:55</time>
+            Created At : <time class="date" title='Updated At: 2020-11-09 15:08:13'>2020-11-10 14:30</time>
         
     </div>
     <div class="article-meta">
@@ -441,7 +451,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E5%9B%BE%E7%89%87"><span class="toc-text">Markdown 图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%82%B9%E6%88%91%E5%88%86%E4%BA%AB%E7%AC%94%E8%AE%B0"><span class="toc-text">点我分享笔记</span></a></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -457,7 +467,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![alt 属性文本](图片地址)</span><br><span class="line"></span><br><span class="line">![alt 属性文本](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开头一个感叹号 !</li>
+<li>接着一个方括号，里面放上图片的替代文字</li>
+<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li>
+</ul>
+<p>使用实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![RUNOOB 图标](http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png)</span><br><span class="line"></span><br><span class="line">![RUNOOB 图标](http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png &quot;RUNOOB&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/A042DF30-C232-46F3-8436-7D6C35351BBD.jpg" alt="img"></p>
+<p>当然，你也可以像网址那样对图片网址使用变量:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [RUNOOB][1].</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">[1]: http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png</span><br></pre></td></tr></table></figure>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/75AA6EBF-CC57-44A6-A585-5EE3DD94E42A.jpg" alt="img"></p>
+<p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src&#x3D;&quot;http:&#x2F;&#x2F;static.runoob.com&#x2F;images&#x2F;runoob-logo.png&quot; width&#x3D;&quot;50%&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>显示结果如下：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/55F2A67D-F4BD-4960-AC55-DC690A415878.jpg" alt="img"></p>
+<p> <a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-link.html">Markdown 链接</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-table.html">Markdown 表格</a> </p>
+<h3 id="点我分享笔记"><a href="#点我分享笔记" class="headerlink" title="点我分享笔记"></a>点我分享笔记</h3>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 3472693572@qq.com </span>
     </div>
